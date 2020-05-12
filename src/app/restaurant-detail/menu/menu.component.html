@@ -1,0 +1,14 @@
+<!--INÍCIO DO MENU -->
+<div class="col-md-9 col-xs-12">
+
+  <mt-menu-item *ngFor="let item of menu | async"
+   [menuItem]="item" (add)="shoppingCart.addItem($event)"></mt-menu-item>
+
+  
+</div>
+<div class="col-md-3 col-xs-12">
+  <mt-shopping-cart #shoppingCart></mt-shopping-cart>
+</div>
+<!-- o componente menu.component(pai) e avisado quando o o componente(filho) 
+  shopping-cart.componente quer add um item no carrinho então o pai avisa outro
+  componente filho menu.componente para add -->

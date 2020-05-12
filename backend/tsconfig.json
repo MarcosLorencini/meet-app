@@ -1,0 +1,11 @@
+//arquivo com opcoes de configuracao do compilador
+
+
+{
+  //compila o arquivo de ts para js assim que salvar o arquivo
+  "compileOnSave": true,  
+  //indica qual o diretorio que aquele js compilado vai ser jogado
+  "compileOptions": {
+      "outDir": "dist"//arquivo compilado de ts para js vai para a pasta dist
+  }
+}
